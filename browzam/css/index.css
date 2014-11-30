@@ -1,0 +1,31 @@
+/*
+*Author: @zamarrowski
+*/
+span,.file{
+	width: 100%!important;
+	margin-top: 5px;
+}
+
+.file{
+	background-image: url("../img/file.png")!important;
+	background-position: 15px;
+	background-repeat: no-repeat;
+	background-size: 25px;
+}
+
+.file:hover{
+	background-image: url("../img/file_white.png")!important;
+}
+
+.folder{
+	background-image: url("../img/folder.png")!important;
+	background-position: 15px;
+	background-repeat: no-repeat;
+	background-size: 25px;
+}
+
+
+.folder:hover{
+	background-image: url("../img/folder_white.png")!important;
+}
+
