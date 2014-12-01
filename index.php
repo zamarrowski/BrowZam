@@ -1,5 +1,5 @@
 <?php
 
-header("Location:Apache/browzam/content/index.php");
+header("browzam/content/index.html");
 
 ?>
