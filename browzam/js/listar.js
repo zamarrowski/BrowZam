@@ -12,7 +12,7 @@ function loadFolder (path) {
 
 function mostrarContenido (path) {
 	$("#contentfolder").css("display","inherit");
-	$.post("loadFolders.php",{path: path},function (data){
+	$.post("loadFolders.php",{path: path, preview: "1"},function (data){
 		$("#contentfolder").html(data);
 	});
 	

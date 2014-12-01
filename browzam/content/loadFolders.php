@@ -2,6 +2,12 @@
 
 $path = $_REQUEST['path'];
 $folder = opendir($path);
+if(isset($_REQUEST['preview'])){
+	$preview = $_REQUEST['preview'];
+}
+else{
+	$preview=0;
+}
 while ($file = readdir($folder)) {
 	if(is_dir("$path/$file")){
 		if($file!="."){
@@ -13,7 +19,10 @@ while ($file = readdir($folder)) {
 				echo '">';
 				echo "Atrás";
 				echo "</span>";
-				echo "<br>";
+				if($preview!="1"){
+					echo "<br>";
+				}
+				
 			}else{
 
 				echo '<span class="btn btn-primary folder" onclick="';
@@ -22,20 +31,26 @@ while ($file = readdir($folder)) {
 				echo '"';
 				echo '>';
 				echo $file;
+				echo "<div id='#cajaimagen'>";
 				echo "<img src='../img/eye.png'";
 				echo 'onmouseover="';
 				echo "mostrarContenido('";
 				echo $path."/".$file."')";
 				echo '"';
 				echo 'onmouseout="cerrarContenido();">';
+				echo "</div>";
 				echo "</span>";
-				echo "<br>";
+				if($preview!="1"){
+					echo "<br>";
+				}
 			}
 		}
 }
 	else{
 		echo "<a class='btn btn-success file' href='$path/$file'>$file</a>";
-		echo "<br>";
+		if($preview!="1"){
+					echo "<br>";
+				}
 		}
 
 	
