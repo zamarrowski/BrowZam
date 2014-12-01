@@ -7,7 +7,7 @@ while ($file = readdir($folder)) {
 		if($file!="."){
 
 			if($file==".."){
-				echo '<span class="btn btn-default" onclick="';
+				echo '<span class="btn btn-default" id="btnatras" onclick="';
 				echo "loadFolder('";
 				echo $path."/".$file."')";
 				echo '">';
@@ -19,9 +19,15 @@ while ($file = readdir($folder)) {
 				echo '<span class="btn btn-primary folder" onclick="';
 				echo "loadFolder('";
 				echo $path."/".$file."')";
-				echo '">';
-
+				echo '"';
+				echo '>';
 				echo $file;
+				echo "<img src='../img/eye.png'";
+				echo 'onmouseover="';
+				echo "mostrarContenido('";
+				echo $path."/".$file."')";
+				echo '"';
+				echo 'onmouseout="cerrarContenido();">';
 				echo "</span>";
 				echo "<br>";
 			}

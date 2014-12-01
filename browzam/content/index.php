@@ -21,9 +21,13 @@
     </div>
   </div>
 </nav>
+<div class="container">
 	<div id="folders" class="container">
 
 
+	</div>
+	<div id="contentfolder" class="container">
+	</div>
 	</div>
 </body>
 </html>

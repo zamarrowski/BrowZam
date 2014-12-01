@@ -29,3 +29,38 @@ span,.file{
 	background-image: url("../img/folder_white.png")!important;
 }
 
+
+#contentfolder{
+	z-index: 99;
+	height: 50%;
+	width: 50%;
+	overflow: auto;
+	position: absolute;
+	background-color: white;
+	top: 25%;
+	left: 25%;
+	border: 1px solid black;
+	box-shadow: 1px 1px 500px;
+	display: none;
+}
+
+#contentfolder *{
+	float: left!important;
+	width: 24%!important;
+	margin-left: 1%;
+}
+#contentfolder img{
+	display: none;
+}
+
+#contentfolder #btnatras{
+	display: none;
+}
+
+
+.folder img{
+	height: 20px;
+	float: right;
+	margin-top: -20px;
+	
+}

@@ -9,3 +9,15 @@ function loadFolder (path) {
 	body.removeAttr("onload");
 }
 
+
+function mostrarContenido (path) {
+	$("#contentfolder").css("display","inherit");
+	$.post("loadFolders.php",{path: path},function (data){
+		$("#contentfolder").html(data);
+	});
+	
+}
+
+function cerrarContenido () {
+	$("#contentfolder").css("display","none");
+}
