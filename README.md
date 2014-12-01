@@ -8,4 +8,5 @@ HOW TO INSTALL:
 
 1. Copy index.php to your server root folder. Example: "xampp/htdocs/";
 2. Copy browzam folder in server root folder. Example : "xampp/htdocs/browzam";
-3. Enjoy!
+3. Maybe, you should change the path in index.php;
+4. Enjoy!;
