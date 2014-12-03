@@ -6,9 +6,13 @@ Responsive File Browser for your Projects written in PHP and JS.
 FEATURES:
 
 -Mobile responsive.
+
 -Find the hidden files.
+
 -Preview of folders.
+
 -Preview of code.
+
 -Different icons for different extenions.
 
 
