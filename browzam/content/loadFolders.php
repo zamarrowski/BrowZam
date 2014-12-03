@@ -47,7 +47,7 @@ while ($file = readdir($folder)) {
 		}
 }
 	else{
-		echo "<a class='btn btn-success file' href='$path/$file'>$file</a>";
+		echo "<a id='$file' href='$path/$file' class='btn btn-success file'>$file<div><img class='imagenpreview' src='../img/pageview.png' onclick='viewCode(".'"'.$path."/".$file.'"'.");'></div></a>";
 		if($preview!="1"){
 					echo "<br>";
 				}

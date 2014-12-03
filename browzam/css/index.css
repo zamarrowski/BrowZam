@@ -29,6 +29,9 @@ span,.file{
 	background-image: url("../img/folder_white.png")!important;
 }
 
+#folders{
+	z-index: 97;
+}
 
 #contentfolder{
 	z-index: 99;
@@ -40,14 +43,57 @@ span,.file{
 	top: 25%;
 	left: 25%;
 	border: 1px solid black;
-	box-shadow: 1px 1px 500px;
+	box-shadow: 1px 1px 50px;
 	display: none;
+	
 }
 
 #contentfolder *{
 	float: left!important;
 	width: 24%!important;
 	margin-left: 1%;
+}
+
+#previewContent{
+	z-index: 99;
+	height: 50%;
+	width: 50%;
+	overflow: auto;
+	position: absolute;
+	background-color: white;
+	top: 25%;
+	left: 25%;
+	border: 1px solid black;
+	box-shadow: 1px 1px 50px;
+	display: none;
+	
+}
+
+#envoltorio{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 2;
+
+	
+}
+
+#previewContent *{
+	color: red!important;
+}
+
+#closePreview{
+z-index: 99;
+position: absolute;
+top: 75%;
+left: 25%;
+display: none;
+width: 50%;
 }
 #contentfolder img{
 	display: none;
@@ -64,3 +110,19 @@ span,.file{
 	margin-top: -20px;
 	
 }
+
+#folders a, #contentfolder a{
+	color:white!important;
+}
+
+
+.imagenpreview{
+	height: 20px!important;
+	float: right;
+	margin-top: -20px;
+	
+}
+
+.imagenpreview:hover{
+	cursor: zoom-in!important;
+	}
