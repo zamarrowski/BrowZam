@@ -19,7 +19,9 @@ class Lector
 			$file[$f] = preg_replace("/".chr(9)."/", "&nbsp;&nbsp;&nbsp;", $file[$f]);
 			$file[$f] = preg_replace("/</", "&lt;", $file[$f]);
 			$file[$f] = preg_replace("/>/", "&gt;", $file[$f]);
+			
 			$file[$f] = nl2br($file[$f]);	
+	
 			echo $file[$f];
 
 		}

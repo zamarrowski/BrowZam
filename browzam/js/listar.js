@@ -31,6 +31,7 @@ function viewCode (path) {
 	var buttonfile = document.getElementById(pathfile);
 	buttonfile.href="#";
 	
+	$("#body").css("overflow","hidden");
 	$("#previewContent").css("display","inherit");
 	$("#closePreview").css("display","inherit");
 	$("#envoltorio").css("display","inherit");
@@ -51,6 +52,7 @@ function viewCode (path) {
 
 
 function closeButton (pathfile,path) {
+	$("#body").css("overflow","auto");
 	$("#previewContent").css("display","none");
 	$("#closePreview").css("display","none");
 	$("#envoltorio").css("display","none");

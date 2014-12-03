@@ -7,10 +7,17 @@ span,.file{
 }
 
 .file{
-	background-image: url("../img/file.png")!important;
+	background-image: url("../img/file.png");
 	background-position: 15px;
 	background-repeat: no-repeat;
 	background-size: 25px;
+}
+
+
+
+
+#contenido{
+	margin-bottom: 30px;
 }
 
 .file:hover{
@@ -22,6 +29,62 @@ span,.file{
 	background-position: 15px;
 	background-repeat: no-repeat;
 	background-size: 25px;
+}
+
+.fileimg{
+	background-image: url("../img/imgblack.png")!important;
+}
+
+.fileimg:hover{
+		background-image: url("../img/imgwhite.png")!important;
+
+}
+
+.fileaudio{
+	background-image: url("../img/audioblack.png")!important;
+}
+
+.fileaudio:hover{
+		background-image: url("../img/audiowhite.png")!important;
+
+}
+
+.filephp{
+	background-image: url("../img/phpblack.png")!important;
+}
+
+.filephp:hover{
+		background-image: url("../img/phpwhite.png")!important;
+
+}
+
+.filecss{
+		background-image: url("../img/cssblack.png")!important;
+
+}
+
+.filecss:hover{
+		background-image: url("../img/csswhite.png")!important;
+
+}
+
+.filejs{
+		background-image: url("../img/jsblack.png")!important;
+
+}
+
+.filejs:hover{
+		background-image: url("../img/jswhite.png")!important;
+
+}
+
+.filehtml{
+	background-image: url("../img/htmlblack.png")!important;
+}
+
+.filehtml:hover{
+		background-image: url("../img/htmlwhite.png")!important;
+
 }
 
 
@@ -60,13 +123,13 @@ span,.file{
 	width: 50%;
 	overflow: auto;
 	position: absolute;
-	background-color: white;
+	background-color: rgb(29,30,26);
 	top: 25%;
 	left: 25%;
 	border: 1px solid black;
-	box-shadow: 1px 1px 50px;
-	display: none;
 	
+	display: none;
+	color: white;
 }
 
 #envoltorio{
@@ -83,9 +146,7 @@ span,.file{
 	
 }
 
-#previewContent *{
-	color: red!important;
-}
+
 
 #closePreview{
 z-index: 99;
